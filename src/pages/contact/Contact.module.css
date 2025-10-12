@@ -75,13 +75,15 @@ button:hover {
 @media (max-width: 768px) {
   .spacer {
     flex-direction: column;      /* 左右區塊改上下排列 */
-    padding: 20px;               /* 調整內距 */
+    padding: 20px;
+    align-items: center;               /* 調整內距 */
     gap: 20px;                   /* 上下區塊間距 */
   }
 
   .info, .wrapper {
-    min-height: auto;            /* 讓區塊高度自適應 */
-    padding: 1rem;               /* 縮小內距 */
+    min-height: auto;
+    width: 100%;            
+    padding: 1rem;               
   }
 
   .title {

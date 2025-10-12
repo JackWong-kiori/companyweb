@@ -45,3 +45,17 @@
 | `w-full`      | 寬度 100%            | 輸入框或 textarea 填滿容器 |
 | `resize-none` | 禁止 textarea 可拉大    | 美化訊息欄位             |
 
+github版本控制
+在本地修改你的程式碼（React、CSS、TSX 等等）。
+
+存檔、commit
+
+git add .
+git commit -m "更新內容描述"
+git push origin main
+
+
+執行部署
+
+npm run deploy
+
