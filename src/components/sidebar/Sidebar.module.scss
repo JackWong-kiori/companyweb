@@ -6,18 +6,19 @@ $sidebar-hover-color: #444;
 .sidebar {
   position: fixed;
   top: 0;
-  right:-$sidebar-width; /* 預設在螢幕外 */
+  right:0; 
   width: $sidebar-width;
   height: 100%;
   background-color: $sidebar-bg-color;
   color: $sidebar-text-color;
-  transition: left 0.4s ease; /* 滑動動畫 */
+  transform: translateX(100%); /* 預設隱藏在畫面外（向右） */
+  transition: transform 0.8s cubic-bezier(.3,.7,.2,1); /* 調整速度與 easing */
   z-index: 1001; /* 在遮罩上方 */
   padding-top: 70px;
 
 
   &.open {
-    right: 0; /* 滑進來 */
+    transform: translateX(0); /* 打開時滑進來 */
     }
 
   .sidebar-content {

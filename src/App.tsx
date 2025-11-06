@@ -6,6 +6,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Footer from './components/footer/Footer';
 import ContactForm from './pages/contact/Contact';
 import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import SplashScreen from "./components/splashscreen/Splashscreen";
 
 function NotReady() {
   return (
@@ -46,9 +47,14 @@ function AppRoutes() {
 }
 
 function App() {
-  return (
+  const [showSplash, setShowSplash] = React.useState(true);
+   return (
     <HashRouter>
-      <AppRoutes />
+      {showSplash ? (
+        <SplashScreen onFinish={() => setShowSplash(false)} />
+      ) : (
+        <AppRoutes />
+      )}
     </HashRouter>
   );
 }

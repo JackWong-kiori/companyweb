@@ -59,3 +59,25 @@ git push origin main
 
 npm run deploy
 
+
+建立分支保存舊版本：
+
+git checkout -b old-version
+git add .
+git commit -m "Save old version"
+
+
+建立分支保存新版本：
+
+git checkout main
+git checkout -b new-version
+git add .
+git commit -m "Add new version with HashRouter"
+
+
+切換版本：
+
+git checkout old-code  # 看舊版本
+git checkout main  # 看新版本
+
+web:https://jackwong-kiori.github.io/companyweb/#/
