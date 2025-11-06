@@ -48,11 +48,6 @@
 github版本控制
 在本地修改你的程式碼（React、CSS、TSX 等等）。
 
-存檔、commit
-
-git add .
-git commit -m "更新內容描述"
-git push origin main
 
 
 執行部署
@@ -81,3 +76,18 @@ git checkout old-code  # 看舊版本
 git checkout main  # 看新版本
 
 web:https://jackwong-kiori.github.io/companyweb/#/
+
+# 1️⃣ 測試本地效果
+npm start
+
+# 2️⃣ 將所有修改加入暫存區
+git add .
+
+# 3️⃣ 建立提交訊息
+git commit -m "更新 SplashScreen 與網站設計"
+
+# 4️⃣推送到 GitHub main 分支（保留版本控制，可選）
+git push origin main
+
+# 5️⃣ 部署到 GitHub Pages
+npm run deploy

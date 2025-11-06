@@ -82,10 +82,15 @@ const SplashScreen: React.FC<SplashscreenProps> = ({ onFinish }) => {
             transition={{ duration: 0.5, delay: 0.15 }}
             style={{ display: "flex", flexDirection: "column" }}
           >
-            <h1 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>
+            <h1 style={{ margin: 0, fontSize: 28, fontWeight: 700, color:"#4ab5abff" }}>
               希織工作室
             </h1>
-            <p style={{ margin: "6px 0 0", fontSize: 14, opacity: 0.9 }}>
+            <p style={{ 
+              margin: "6px 0 0", 
+              fontSize: 20, 
+              opacity: 0.9,
+              color:"#59dbffff",
+               }}>
               提供創新高效的軟體解決方案
             </p>
           </motion.div>
